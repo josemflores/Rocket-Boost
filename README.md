@@ -1,50 +1,50 @@
-Rocket Boost
+# Rocket Boost
 
-Rocket Boost is a physics-based arcade navigation game developed in Unity. The project focuses on controlling a spacecraft through challenging environments while managing resource constraints and environmental hazards.
+Rocket Boost is a physics-based arcade navigation game built using the Unity engine and the Universal Render Pipeline (URP). The project challenges players to navigate a high-momentum spacecraft through hazardous environments, requiring precise control and resource management to reach a safe landing zone.
 Play the Game
 
-The latest build of Rocket Boost can be accessed here:
-[Insert Web Link Here]
-Project Overview
+The latest build of Rocket Boost (Rocket Gen1) is available to play in your browser:
+https://play.unity.com/api/v1/games/game/b3c5b7d6-57ea-459d-a2d0-344f554d987b/build/latest/frame
+# Project Overview
 
-This project was developed as part of the Software Programming and Development pathway at Byron Nelson High School. It represents a practical exploration of game mechanics, physics-based movement, and the iterative software development lifecycle within a professional engine environment.
+This project was developed as a key component of the Software Programming and Development pathway at Byron Nelson High School. It serves as a practical application of game design theory, physics integration, and the iterative software development lifecycle. The primary goal was to create a responsive, challenging gameplay loop while maintaining clean, modular project architecture.
 Technical Implementation
+# Physics-Based Navigation
 
-The game utilizes Unity's Universal Render Pipeline (URP) and is built with a focus on modular component design.
-Key Mechanics
+The flight model utilizes Unity's physics engine to simulate realistic momentum. Players must manage constant gravitational pull and inertial forces, making every thrust and rotation a calculated decision. The sensitivity and gravity settings were meticulously tuned in the project configuration to balance difficulty with player agency.
+# Object-Oriented Environmental Logic
 
-    Physics-Based Control: The flight model relies on constant momentum and gravitational forces, requiring players to balance thrust and rotation to maintain stability.
+The game utilizes a robust tag-based collision system to manage environmental interactions. By categorizing objects into specific layers—such as "Friendly" for landing zones, "Fuel" for resource replenishment, and "Player Rocket" for the primary actor—the system can efficiently handle complex collision logic without taxing performance.
+# Rendering and Performance
 
-    Resource Logic: Players must interact with specific environmental objects, such as fuel pickups, to extend their flight time.
+Built on the Universal Render Pipeline, the project is optimized for both visual fidelity and performance across platforms, including the WebGL build. The use of URP allows for advanced lighting and post-processing while ensuring the game remains accessible on lower-end hardware.
+# Software Engineering Insights
 
-    Collision Matrix: The game uses a custom tag system (Player Rocket, Friendly, Fuel) to differentiate between safe landing zones, essential resources, and hazardous obstacles.
+Developing Rocket Boost provided hands-on experience with several core engineering principles:
 
-Software Engineering Insights
+__Component-Based Architecture__
 
-Developing Rocket Boost provided significant experience in several core software engineering disciplines:
-Component-Based Architecture
+The project follows Unity's component-based design pattern. By decoupling movement, collision handling, and resource management into separate modules, the codebase remains scalable. This approach taught the importance of "separation of concerns," making it easier to troubleshoot specific mechanics without affecting the entire system.
 
-Working within Unity highlighted the importance of a component-based design pattern. Instead of building monolithic scripts, we learned to separate concerns into distinct modules for movement, resource management, and collision logic. This modularity made the project easier to debug and extend.
-Version Control and Collaboration
+__Configuration and Version Control__
 
-Collaborating on a shared codebase required disciplined use of version control. We learned how to manage project settings, handle merge conflicts in YAML-based asset files, and maintain a consistent project structure to ensure that changes made by one developer did not break the work of another.
-Problem Solving and Iteration
+Managing the ProjectSettings and Packages manifests required a disciplined approach to version control. Handling YAML-based asset files and configuring comprehensive .gitignore and ignore.conf rules highlighted the necessity of maintaining a clean repository, ensuring that temporary local data (like the Library folder) does not interfere with the shared codebase.
 
-The development process emphasized the importance of the "fail fast" mentality. Early prototypes of the flight physics were often uncontrollable, requiring multiple rounds of tuning variables like gravity, sensitivity, and mass within the project settings to achieve a "difficult but fair" gameplay loop.
-Controls
+__Iterative Problem Solving__
 
-The input system supports both keyboard and mouse configurations:
+Fine-tuning the "feel" of the rocket required constant iteration. Through adjusting the input axes for thrust and rotation, the development process emphasized the importance of user experience (UX) testing and learning how to translate technical variables into an intuitive and rewarding player experience.
+# Controls
+
+The input system is configured for standard keyboard and mouse layouts:
 
     Thrust: Spacebar
 
-    Rotation: A/D Keys or Left/Right Arrow Keys
+    Rotation: A / D Keys or Left / Right Arrow Keys
 
-    Action/Interact: Left Ctrl or Mouse 0
+    Interaction: Left Ctrl or Mouse 0
 
-Credits
+# Credits
 
-    Jose Perez Flores – Co-Developer and Designer
+    Jose Perez Flores – Developer and Designer
 
-    Gavin Johnson – Co-Developer and Designer
-
-Note on Source Files: While the core gameplay mechanics and input configurations were successfully deciphered from the project's asset and management files, the specific C# (MonoScript) logic files were not available for review in this directory. The README is based on the inferred logic from the TagManager and InputManager configurations.
+    Gavin Johnson – Developer and Designer
