@@ -4,7 +4,7 @@ Rocket Boost is a physics-based arcade navigation game built using the Unity eng
 Play the Game
 
 The latest build of Rocket Boost (Rocket Gen1) is available to play in your browser:
-https://play.unity.com/api/v1/games/game/b3c5b7d6-57ea-459d-a2d0-344f554d987b/build/latest/frame
+https://play.unity.com/en/games/b3c5b7d6-57ea-459d-a2d0-344f554d987b/rocket-gen1
 # Project Overview
 
 This project was developed as a key component of the Software Programming and Development pathway at Byron Nelson High School. It serves as a practical application of game design theory, physics integration, and the iterative software development lifecycle. The primary goal was to create a responsive, challenging gameplay loop while maintaining clean, modular project architecture.
