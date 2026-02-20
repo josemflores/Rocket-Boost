@@ -8,14 +8,17 @@ https://play.unity.com/api/v1/games/game/b3c5b7d6-57ea-459d-a2d0-344f554d987b/bu
 # Project Overview
 
 This project was developed as a key component of the Software Programming and Development pathway at Byron Nelson High School. It serves as a practical application of game design theory, physics integration, and the iterative software development lifecycle. The primary goal was to create a responsive, challenging gameplay loop while maintaining clean, modular project architecture.
-Technical Implementation
-# Physics-Based Navigation
+# Technical Implementation
+
+__Physics-Based Navigation__
 
 The flight model utilizes Unity's physics engine to simulate realistic momentum. Players must manage constant gravitational pull and inertial forces, making every thrust and rotation a calculated decision. The sensitivity and gravity settings were meticulously tuned in the project configuration to balance difficulty with player agency.
-# Object-Oriented Environmental Logic
+ 
+__Object-Oriented Environmental Logic__
 
 The game utilizes a robust tag-based collision system to manage environmental interactions. By categorizing objects into specific layers—such as "Friendly" for landing zones, "Fuel" for resource replenishment, and "Player Rocket" for the primary actor—the system can efficiently handle complex collision logic without taxing performance.
-# Rendering and Performance
+
+__Rendering and Performance__
 
 Built on the Universal Render Pipeline, the project is optimized for both visual fidelity and performance across platforms, including the WebGL build. The use of URP allows for advanced lighting and post-processing while ensuring the game remains accessible on lower-end hardware.
 # Software Engineering Insights
