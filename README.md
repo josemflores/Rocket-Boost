@@ -1,4 +1,3 @@
- Gemini said
 Rocket Boost
 
 Rocket Boost is a physics-based arcade navigation game developed in Unity. The project focuses on controlling a spacecraft through challenging environments while managing resource constraints and environmental hazards.
